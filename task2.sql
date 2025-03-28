@@ -24,7 +24,7 @@ VALUES (3, '2024-03-20', 25000.00);
 
 -- Question 7  
 UPDATE Customers  
-SET Email = 'updated.email@example.com', Address = '500 Maple St'  
+SET Email = 'saravanan@gmail.com', Address = '500 Maple St'  
 WHERE CustomerID = 3;  
 
 -- Question 8  
