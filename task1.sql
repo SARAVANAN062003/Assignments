@@ -1,4 +1,3 @@
-use techshop;
 -- Question 1: Create the TechShop Database
 CREATE DATABASE TechShop;
 USE TechShop;
