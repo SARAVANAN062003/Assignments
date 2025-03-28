@@ -1,8 +1,8 @@
--- Question 1: Create the TechShop Database
+-- Question 1
 CREATE DATABASE TechShop;
 USE TechShop;
 
--- Question 2: Create Tables
+-- Question 2:
 CREATE TABLE Customers (
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE Inventory (
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID) ON DELETE CASCADE
 );
 
--- Question 3: Insert Sample Data
+-- Question 3:
 INSERT INTO Customers (CustomerID, FirstName, LastName, Email, Phone, Address) VALUES
 (1, 'Saravanan', 'N', 'saravanan@gmail.com', '8248344887', 'Chennai, TN'),
 (2, 'Arun', 'Kumar', 'arun.kumar@gmail.com', '9876543210', 'Bangalore, KA'),
