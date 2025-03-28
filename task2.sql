@@ -8,7 +8,7 @@ JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 
 -- Question 3  
 INSERT INTO Customers (FirstName, LastName, Email, Phone, Address)  
-VALUES ('Vikram', 'Singh', 'vikram.singh@gmail.com', '8123456789', '900 Oak St');  
+VALUES ('Saravanan', 'N', 'saravanan@gmail.com', '8123456789', '900 Oak St');  
 
 -- Question 4  
 UPDATE Products  
