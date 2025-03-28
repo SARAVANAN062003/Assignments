@@ -32,8 +32,7 @@ ORDER BY Total_Quantity desc;
 
 --5. 
 SELECT p.ProductName,p.Description
-FROM Products p
-WHERE p.ProductName ;
+FROM Products p;
 
 
 --6. 
