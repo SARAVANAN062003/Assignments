@@ -43,14 +43,14 @@ GROUP BY c.CustomerID,c.FirstName, c.LastName;
 
 
 --7. 
-select TOP 1  c.CustomerID, c.FirstName, c.LastName, c.Email, SUM(p.Price * o.Quantity) as Total_Revenue from Products as p
-join
-OrderDetails o
-on  p.ProductID=o.ProductID  
-join Orders od on od.OrderID=o.OrderID
-join Customers c on od.CustomerID = c.CustomerID
-group by p.ProductID, p.ProductName, c.CustomerID, c.FirstName, c.LastName, c.Email
-order by Total_Revenue desc;
+SELECT TOP 1  c.CustomerID,  c.FirstName,  c.LastName,  c.Email,  SUM(p.Price * o.Quantity) AS Total_Revenue
+FROM Products AS p
+JOIN OrderDetails o ON p.ProductID = o.ProductID
+JOIN Orders od ON od.OrderID = o.OrderID
+JOIN Customers c ON od.CustomerID = c.CustomerID
+GROUP BY c.CustomerID, c.FirstName, c.LastName, c.Email
+ORDER BY Total_Revenue DESC;
+
 
 
 --8.
