@@ -14,7 +14,7 @@ SELECT (SELECT SUM(totalamount) FROM orders) AS total_revenue;
 SELECT (SELECT AVG(od.quantity) 
         FROM orderdetails od
         WHERE od.productid IN 
-              (SELECT productid FROM products WHERE description = '')
+              (SELECT productid FROM products WHERE description = 'Dell Inspiron 15')
        ) AS avg_quantity_ordered;
 
 -- Q5
