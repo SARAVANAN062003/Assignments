@@ -44,7 +44,7 @@ CREATE TABLE Inventory (
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID) ON DELETE CASCADE
 );
 
--- Question 3:
+-- Question 5:
 INSERT INTO Customers (CustomerID, FirstName, LastName, Email, Phone, Address) VALUES
 (1, 'Saravanan', 'N', 'saravanan@gmail.com', '8248344887', 'Chennai, TN'),
 (2, 'Arun', 'Kumar', 'arun.kumar@gmail.com', '9876543210', 'Bangalore, KA'),
