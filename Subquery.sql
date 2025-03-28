@@ -1,8 +1,6 @@
 -- Q1
-select *from Products;
-SELECT firstname, lastname, email 
-FROM customers 
-WHERE customerid NOT IN (SELECT DISTINCT customerid FROM orders);
+1.select CustomerID from Customers
+where CustomerID not in (select CustomerID from Orders );
 
 -- Q2
 SELECT (SELECT COUNT(*) FROM products) AS total_products;
